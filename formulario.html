@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es"> <!-- Cambié el lenguaje a español -->
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" media="screen" href="./styles.css">
-  <title>Formulario</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="styles.css"> <!-- El archivo style.css está al mismo nivel, entonces cambié la forma de la ruta -->
+  <title>Mi cumpleaños</title> <!-- El formulario hace referencia a que es un cumpleaños, entonces cambie el titulo para que estuviera más acorde con el tema principal -->
 </head>
 <body>
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
-    Nombre <input type="text" name="name" id="name">
+  <form class="formulario" action = "" method="POST"> <!-- A donde se enviará la información del formulario???? entonces se agrega el atributo action para saber a donde se enviarán los datos-->
+    Nombre <input type="text" name="name" id="name" required> <!-- Agregue el atributo required para que estos datos sean obligatorios al mandar el formulario -->
     <br />
-    Edad <input type="number" name="age" id="age">
+    Edad <input type="number" name="age" id="age" required> <!-- Lo mismo con el atributo required -->
     <br />
 
     Nacionalidad
@@ -26,7 +26,7 @@
       <option value="vnzl">Venezolana</option>
     </select>
     <br />
-    <input type="submit">
+    <input type="submit" value="Confirmar mi asistencia">
   </form>
 
   <div>
@@ -34,7 +34,7 @@
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="formulario.js"></script> <!-- Como están en el mismo nivel, cambie la ruta de el archivo JS para que pudiera leerlo. -->
 </body>
 
 </html>
